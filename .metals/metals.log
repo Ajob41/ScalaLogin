@@ -2194,3 +2194,120 @@ Mar 20, 2025 6:08:58 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notif
 WARNING: Unsupported notification method: metals/windowStateDidChange
 Mar 20, 2025 6:09:03 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 WARNING: Unsupported notification method: metals/windowStateDidChange
+2025.03.24 15:31:15 INFO  Started: Metals version 1.5.1 in folders 'C:\Users\amiin\Desktop\ScalaLogin' for client Visual Studio Code 1.98.2.
+2025.03.24 15:31:19 INFO  no build target found for C:\Users\amiin\Desktop\ScalaLogin\app.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.24 15:31:24 INFO  no build target found for C:\Users\amiin\Desktop\ScalaLogin\app.scala. Using presentation compiler with project's scala-library version: 3.3.4
+2025.03.24 15:31:24 INFO  Attempting to connect to the build server...
+2025.03.24 15:31:24 INFO  Running BSP server List(C:\Users\amiin\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Users\amiin\Desktop\ScalaLogin\.scala-build\ide-options-v2.json, --json-launcher-options, C:\Users\amiin\Desktop\ScalaLogin\.scala-build\ide-launcher-options.json, --envs-file, C:\Users\amiin\Desktop\ScalaLogin\.scala-build\ide-envs.json, C:\Users\amiin\Desktop\ScalaLogin)
+2025.03.24 15:31:28 INFO  BSP server: Checking https://github.com/coursier/jvm-index/raw/master/index.json
+2025.03.24 15:31:28 INFO  BSP server: Checked https://github.com/coursier/jvm-index/raw/master/index.json
+2025.03.24 15:31:28 INFO  BSP server: Downloading https://github.com/coursier/jvm-index/raw/master/index.json
+2025.03.24 15:31:28 INFO  BSP server: Downloaded https://github.com/coursier/jvm-index/raw/master/index.json
+2025.03.24 15:31:29 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\amiin\Desktop\ScalaLogin\.metals\bsp.trace.json or C:\Users\amiin\AppData\Local\scalameta\metals\cache\bsp.trace.json
+2025.03.24 15:31:33 INFO  BSP server: Starting compilation server
+2025.03.24 15:31:40 INFO  time: Connected to build server in 15s
+2025.03.24 15:31:40 INFO  Connected to Build server: scala-cli v1.6.2
+2025.03.24 15:31:40 INFO  time: Imported build in 0.16s
+2025.03.24 15:31:40 INFO  running doctor check
+2025.03.24 15:31:40 INFO  java targets: ScalaLogin_2071afaf6c-test, ScalaLogin_2071afaf6c
+2025.03.24 15:31:51 INFO  time: indexed workspace in 10s
+Mar 24, 2025 3:32:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 117
+Mar 24, 2025 3:33:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 140
+Mar 24, 2025 3:33:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 325
+Mar 24, 2025 3:33:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 380
+Mar 24, 2025 3:34:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 414
+Mar 24, 2025 3:34:07 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SEVERE: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\amiin\Desktop\ScalaLogin\.metals\.reports\metals-full\2025-03-16\r_empty-definition_(ScalaLogin_2071afaf6c)_08-02-16-574.md)
+Mar 24, 2025 3:35:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 747
+Mar 24, 2025 3:35:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 748
+Mar 24, 2025 3:35:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 761
+Mar 24, 2025 3:35:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 821
+Mar 24, 2025 3:35:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 822
+Mar 24, 2025 3:35:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 823
+Mar 24, 2025 3:35:43 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+SEVERE: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\amiin\Desktop\ScalaLogin\.metals\.reports\metals-full\2025-03-16\r_empty-definition_(ScalaLogin_2071afaf6c)_08-02-16-574.md)
+Mar 24, 2025 3:36:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 969
+Mar 24, 2025 3:39:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1613
+Mar 24, 2025 3:39:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1841
+2025.03.24 15:40:02 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.03.24 15:40:09 INFO  time: compiled ScalaLogin_2071afaf6c in 6.98s
+Mar 24, 2025 3:40:16 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 24, 2025 3:40:20 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 24, 2025 3:40:41 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 24, 2025 3:41:08 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 24, 2025 3:41:15 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 24, 2025 3:41:18 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+2025.03.24 15:41:23 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.03.24 15:41:25 INFO  time: compiled ScalaLogin_2071afaf6c in 2.17s
+Mar 24, 2025 3:41:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1991
+2025.03.24 15:41:34 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.03.24 15:41:35 INFO  time: compiled ScalaLogin_2071afaf6c in 1.31s
+2025.03.24 15:41:40 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.03.24 15:41:42 INFO  time: compiled ScalaLogin_2071afaf6c in 1.39s
+2025.03.24 15:41:47 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.03.24 15:41:48 INFO  time: compiled ScalaLogin_2071afaf6c in 1.01s
+Mar 24, 2025 3:42:14 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 24, 2025 3:42:42 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 24, 2025 3:42:44 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 24, 2025 3:42:48 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 24, 2025 3:42:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2104
+2025.03.24 15:42:53 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.03.24 15:42:54 INFO  time: compiled ScalaLogin_2071afaf6c in 1.08s
+2025.03.24 15:43:10 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.03.24 15:43:10 INFO  time: compiled ScalaLogin_2071afaf6c in 0.68s
+2025.03.24 15:43:25 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.03.24 15:43:25 INFO  time: compiled ScalaLogin_2071afaf6c in 0.65s
+Mar 24, 2025 3:43:35 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 24, 2025 3:43:44 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 24, 2025 3:43:48 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 24, 2025 3:44:28 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 24, 2025 3:44:37 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 24, 2025 3:44:45 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 24, 2025 3:45:05 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 24, 2025 3:45:13 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 24, 2025 3:46:08 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 24, 2025 3:46:33 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 24, 2025 3:46:47 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 24, 2025 3:47:40 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 24, 2025 3:48:30 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
+Mar 24, 2025 3:48:31 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+WARNING: Unsupported notification method: metals/windowStateDidChange
