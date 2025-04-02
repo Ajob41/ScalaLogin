@@ -1,0 +1,14 @@
+
+¹3FileHandlingManager/HttpOfThings/HttpOfthings.scala2
+ 
+com/2
+ com/sun/2
+ com/sun/net/2!
+ com/sun/net/httpserver/2,
+ )"com/sun/net/httpserver/HttpServer#2-
++ 6#com/sun/net/httpserver/HttpHandler#2.
+8 D$com/sun/net/httpserver/HttpExchange#:ï
+ EæNo class, trait or object is defined in the compilation unit.
+The incremental compiler cannot record the dependency information in such case.
+Some errors like unused import referring to a non-existent class might not be reported.
+PZ 8F6C0DA5D84FA03B5596A9C7E6DDC2D5

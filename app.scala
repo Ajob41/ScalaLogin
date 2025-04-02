@@ -3,19 +3,19 @@ import java.net.InetSocketAddress
 import java.io.File
 import java.io.BufferedReader
 import java.io.FileReader
-
+import FileHandlingManager.*;
 // Helper function to check URL
 def isUrlOf(urlPath: String, ask: HttpExchange): Boolean = {
-  ask.getRequestURI().getPath() == urlPath
+  return ask.getRequestURI().getPath().toLowerCase == urlPath.toLowerCase();
 }
 
 // Helper function to check HTTP method
 def isHttpMethodOf(httpRequestMethod: String, ask: HttpExchange): Boolean = {
-  ask.getRequestMethod().equals(httpRequestMethod)
+  return ask.getRequestMethod().equals(httpRequestMethod)
 }
 
 @main def main(): Unit = {
-  // Create the server and bind it to port 3000
+
   val server = HttpServer.create(new InetSocketAddress(3000), 1)
 
   // Create an HTTP context for "/send"
@@ -23,35 +23,37 @@ def isHttpMethodOf(httpRequestMethod: String, ask: HttpExchange): Boolean = {
     "/",
     new HttpHandler {
       def handle(ask: HttpExchange): Unit = {
+
         if (isUrlOf("/", ask) && isHttpMethodOf("GET", ask)) {
-          val file = new File("index.html")
-          fileData(file);
-          serveFile(file);
+          val fileName = "index.html";
 
+          val fileToBeServed = fileData(getFileData(fileName));
           ask.getResponseHeaders().set("Content-Type", "text/html");
-          ask.sendResponseHeaders(200, response.getBytes().length);
-          var server = ask.getResponseBody();
-          server.write(response.getBytes());
-          server.close();
+          ask.sendResponseHeaders(200, fileToBeServed.getBytes().length);
+          val response = ask.getResponseBody();
+          response.write(fileToBeServed.getBytes())
+          response.close();
         }
-        // If request is GET for "/send"
-        if (isUrlOf("/Client1", ask) && isHttpMethodOf("GET", ask)) {
-          var response = "";
-          val file = BufferedReader(new FileReader("client.html"))
-          var line = file.readLine();
-          while (line != null) {
+        if (isUrlOf("/client1", ask) && isHttpMethodOf("GET", ask)) {
+          val fileName = "client.html";
 
-            response+=line;
-            line = file.readLine();
-          }
-
+          val fileToBeServed = fileData(getFileData(fileName));
           ask.getResponseHeaders().set("Content-Type", "text/html");
-          ask.sendResponseHeaders(200, response.getBytes().length);
-          var server = ask.getResponseBody();
-          server.write(response.getBytes());
-          server.close();
+          ask.sendResponseHeaders(200, fileToBeServed.getBytes().length);
+          val response = ask.getResponseBody();
+          response.write(fileToBeServed.getBytes())
+          response.close();
+        } else if (
+          isUrlOf("/client2", ask) && isHttpMethodOf("GET", ask)
+        ) {
+          val fileName = "client2.html"
+          val fileToBeServed = fileData(getFileData(fileName));
+          ask.getResponseHeaders().set("Content-Type", "text/html");
+          ask.sendResponseHeaders(200, fileToBeServed.getBytes().length);
+          val response = ask.getResponseBody();
+          response.write(fileToBeServed.getBytes())
+          response.close();
         } else {
-          // Custom 404 message if the route is not found
           val response = "<h1>Ayyub this route does not exist</h1>"
           ask.getResponseHeaders().set("Content-Type", "text/html")
 
@@ -83,18 +85,18 @@ def isHttpMethodOf(httpRequestMethod: String, ask: HttpExchange): Boolean = {
 //   case _ => "unknown file" // Default case
 // }
 
-def fileData(file:String):String = {
-  var data = "";
-  val theFile = new File(file);
-  var readFile = BufferedReader(new FileReader(theFile));
-  var line = readFile.readLine();
-  while(line != null) {
-      data+=line;
-      line = readFile.readLine();
-  }
-  data;
-}
-def serveFile(file:String):String = {
-   val fileOf = new File(file);
-   ""
-}
+// def fileData(file: String): String = {
+//   var data = "";
+//   val theFile = new File(file);
+//   var readFile = BufferedReader(new FileReader(theFile));
+//   var line = readFile.readLine();
+//   while (line != null) {
+//     data += line;
+//     line = readFile.readLine();
+//   }
+//   return serveFile(data);
+
+// }
+// def serveFile(fileData: String): String = {
+//   return fileData
+// }
