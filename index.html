@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Default Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    <button onclick = "window.location.href='/client1'">Goto</button>
+  <button>click</button>
+  <p id = "msg"></p>
+  <script>
+    fetch("http://localhost:3000/message")
+    .then(function(response){
+      return response.text();
+    })
+    .then(function(data){
+      document.querySelector("#msg").textContent = data;
+    })
+    .catch(function(error){
+      console.log("something went wrong");
+    })
+  </script>
 </body>
 </html>

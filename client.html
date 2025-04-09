@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Client1</title>
     <style>
-        #message-membrane{
+        #message-membrane {
             border: 2px solid black;
             width: 400px;
             border-radius: 5px;
             height: 490px;
         }
-        #send-area{
-            top:420px;
+
+        #send-area {
+            top: 420px;
             position: relative;
         }
-        #send-area > input {
+
+        #send-area>input {
             width: 320px;
             position: relative;
             left: 9px;
-            top:45px;
+            top: 45px;
         }
-        #send-area > button {
+
+        #send-area>button {
             width: 50px;
             position: relative;
             left: 10px;
-            top:45px;
+            top: 45px;
         }
+
         ul {
-           
+
             height: 420px;
             position: relative;
             top: -43px;
-            
-           list-style: none; 
+
+            list-style: none;
         }
-        ul > li {
+
+        ul>li {
             background-color: rgb(43, 85, 202);
-            color:white;
+            color: white;
             margin: 23px;
             left: -55px;
             position: relative;
@@ -45,54 +51,58 @@
         }
     </style>
 </head>
+
 <body>
     <h1>Client1</h1>
     <div id="message-membrane">
         <div id="send-area">
-         <input type="text">
-         <button id = "send">send</button>
+            <input type="text">
+            <button id="send">send</button>
         </div>
         <div id="message-area">
-            <ul id = "messages">
-             <li id = "1"></li>
-             <li id = "2"></li>
-             <li id = "3"></li>
-             <li id = "4"></li>
-             <li id = "5"></li>
-             <li id = "6"></li>
-             <li id = "7"></li>
-             <li id = "8"></li>
-             <li id = "9"></li>
-             <li id = "10"></li>
-             <li id = "11"></li>
-             <li id = "12"></li>
-             <li id = "13"></li>
-             <li id = "14"></li>
-             <li id = "15"></li>
-             <li id = "16"></li>
-             <li id = "17"></li>
-             
+            <ul id="messages">
+                <li id="1"></li>
+                <li id="2"></li>
+                <li id="3"></li>
+                <li id="4"></li>
+                <li id="5"></li>
+                <li id="6"></li>
+                <li id="7"></li>
+                <li id="8"></li>
+                <li id="9"></li>
+                <li id="10"></li>
+                <li id="11"></li>
+                <li id="12"></li>
+                <li id="13"></li>
+                <li id="14"></li>
+                <li id="15"></li>
+                <li id="16"></li>
+                <li id="17"></li>
+
             </ul>
         </div>
     </div>
     <script>
-     const sendButton = document.querySelector("#send");
-     let message = document.querySelector("input");
-     const request = new Request("http://localhost:3000/client1",{
-        method:"POST",
-        headers:{
-            "Content-Type":"text/plain",
-        },
-        body:message.value
-     })
+        const sendButton = document.querySelector("#send");
+        let inputField = document.querySelector("input");
+        const messageMembrane = document.getElementById("message-membrane");
+        const isInputFieldEmpty = function (inputElement) {
+            return inputElement.value.length < 1;
+        }
+        const isSendButtonClicked = function (sendButtonElement, event) {
+            if (event.target === sendButtonElement && isInputFieldEmpty(inputField) === true) {
+                alert("please fill the input field")
+            }
+        }
+        const eventPortal = function (event) {
+            isSendButtonClicked(sendButton, event)
 
-    //  document.querySelector("#message-membrane")
-    //  .addEventListener("click",function(event){
-    //     if(event.target === sendButton){
-    //         console.log("clicked")
-    //     }
-    //  })
-     console.log("hello ayyub")
+        }
+        messageMembrane.
+            addEventListener("click", eventPortal)
+
+
     </script>
 </body>
+
 </html>
