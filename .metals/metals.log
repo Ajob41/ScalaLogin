@@ -7339,3 +7339,17 @@ WARNING: Unmatched cancel notification for request id 1959
 2025.04.09 11:23:23 INFO  compiling scalalogin_2071afaf6c (1 scala source)
 2025.04.09 11:23:23 WARN  Invalid text document uri received from build server: file:///C:/Users/amiin/Desktop/ScalaLogin/FileHandlingManager/HttpOfThings/HttpOfthings.scala
 2025.04.09 11:23:23 INFO  time: compiled ScalaLogin_2071afaf6c in 0.37s
+2025.04.09 11:48:06 INFO  Started: Metals version 1.5.2 in folders 'C:\Users\amiin\Desktop\ScalaLogin' for client Visual Studio Code 1.98.2.
+2025.04.09 11:48:11 INFO  Attempting to connect to the build server...
+2025.04.09 11:48:11 INFO  Running BSP server List(C:\Users\amiin\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Users\amiin\Desktop\ScalaLogin\.scala-build\ide-options-v2.json, --json-launcher-options, C:\Users\amiin\Desktop\ScalaLogin\.scala-build\ide-launcher-options.json, --envs-file, C:\Users\amiin\Desktop\ScalaLogin\.scala-build\ide-envs.json, C:\Users\amiin\Desktop\ScalaLogin)
+2025.04.09 11:48:16 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\amiin\Desktop\ScalaLogin\.metals\bsp.trace.json
+2025.04.09 11:48:19 INFO  BSP server: Starting compilation server
+2025.04.09 11:48:27 INFO  time: Connected to build server in 15s
+2025.04.09 11:48:27 INFO  Connected to Build server: scala-cli v1.6.2
+2025.04.09 11:48:27 INFO  time: Imported build in 0.19s
+2025.04.09 11:48:29 WARN  Invalid text document uri received from build server: file:///C:/Users/amiin/Desktop/ScalaLogin/FileHandlingManager/HttpOfThings/HttpOfthings.scala
+2025.04.09 11:48:29 INFO  BSP server: No class, trait or object is defined in the compilation unit.
+The incremental compiler cannot record the dependency information in such case.
+Some errors like unused import referring to a non-existent class might not be reported.
+
+2025.04.09 11:48:40 INFO  time: indexed workspace in 13s

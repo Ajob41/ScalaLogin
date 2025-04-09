@@ -93,9 +93,26 @@
             if (event.target === sendButtonElement && isInputFieldEmpty(inputField) === true) {
                 alert("please fill the input field")
             }
+            dataToBeSent(inputField.value)
+        }
+        const dataToBeSent = function (data) {
+            return data;
+        }
+        const thenSendMessage = function (message) {
+            const request = new Request("http://localhost:3000/message", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "text/html"
+                },
+                body: inputField.value
+            })
+
         }
         const eventPortal = function (event) {
-            isSendButtonClicked(sendButton, event)
+
+            if (isSendButtonClicked(sendButton, event) === true) {
+                console.log(inputField.value)
+            }
 
         }
         messageMembrane.
