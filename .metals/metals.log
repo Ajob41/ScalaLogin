@@ -7353,3 +7353,515 @@ The incremental compiler cannot record the dependency information in such case.
 Some errors like unused import referring to a non-existent class might not be reported.
 
 2025.04.09 11:48:40 INFO  time: indexed workspace in 13s
+2025.04.09 15:34:45 INFO  Started: Metals version 1.5.2 in folders 'C:\Users\amiin\Desktop\ScalaLogin' for client Visual Studio Code 1.98.2.
+2025.04.09 15:34:50 INFO  Attempting to connect to the build server...
+2025.04.09 15:34:50 INFO  Running BSP server List(C:\Users\amiin\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Users\amiin\Desktop\ScalaLogin\.scala-build\ide-options-v2.json, --json-launcher-options, C:\Users\amiin\Desktop\ScalaLogin\.scala-build\ide-launcher-options.json, --envs-file, C:\Users\amiin\Desktop\ScalaLogin\.scala-build\ide-envs.json, C:\Users\amiin\Desktop\ScalaLogin)
+2025.04.09 15:34:56 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\amiin\Desktop\ScalaLogin\.metals\bsp.trace.json
+2025.04.09 15:34:57 INFO  BSP server: Starting compilation server
+2025.04.09 15:35:02 INFO  time: Connected to build server in 10s
+2025.04.09 15:35:02 INFO  Connected to Build server: scala-cli v1.6.2
+2025.04.09 15:35:02 INFO  time: Imported build in 0.2s
+2025.04.09 15:35:05 WARN  Invalid text document uri received from build server: file:///C:/Users/amiin/Desktop/ScalaLogin/FileHandlingManager/HttpOfThings/HttpOfthings.scala
+2025.04.09 15:35:05 INFO  BSP server: No class, trait or object is defined in the compilation unit.
+The incremental compiler cannot record the dependency information in such case.
+Some errors like unused import referring to a non-existent class might not be reported.
+
+2025.04.09 15:35:15 INFO  time: indexed workspace in 13s
+Apr 09, 2025 3:36:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 29
+Apr 09, 2025 3:36:02 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\amiin\Desktop\ScalaLogin\.metals\.reports\metals-full\2025-03-16\r_empty-definition_(ScalaLogin_2071afaf6c)_08-02-16-574.md)
+Apr 09, 2025 3:46:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 104
+Apr 09, 2025 3:49:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 136
+2025.04.09 15:50:05 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.09 15:50:10 WARN  Invalid text document uri received from build server: file:///C:/Users/amiin/Desktop/ScalaLogin/FileHandlingManager/HttpOfThings/HttpOfthings.scala
+2025.04.09 15:50:10 INFO  time: compiled ScalaLogin_2071afaf6c in 5s
+2025.04.09 15:50:10 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:50:11 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:50:11 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:50:21 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+Apr 09, 2025 3:50:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 273
+2025.04.09 15:50:27 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:50:28 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:50:29 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:50:30 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:50:30 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:50:32 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:50:33 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:50:34 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:50:38 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+Apr 09, 2025 3:50:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 367
+2025.04.09 15:50:39 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:50:40 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:50:40 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+Apr 09, 2025 3:50:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 387
+Apr 09, 2025 3:50:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 390
+Apr 09, 2025 3:50:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 399
+2025.04.09 15:50:41 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:50:50 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:50:51 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:50:52 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:50:53 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:50:53 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:50:54 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:00 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+Apr 09, 2025 3:51:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 507
+2025.04.09 15:51:00 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:01 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:01 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:02 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:02 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:02 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:07 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:08 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+Apr 09, 2025 3:51:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 570
+2025.04.09 15:51:08 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:09 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:09 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:10 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:11 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.09 15:51:13 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:14 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:14 WARN  Invalid text document uri received from build server: file:///C:/Users/amiin/Desktop/ScalaLogin/FileHandlingManager/HttpOfThings/HttpOfthings.scala
+2025.04.09 15:51:14 INFO  time: compiled ScalaLogin_2071afaf6c in 3.35s
+2025.04.09 15:51:14 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:17 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:18 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:19 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:20 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:22 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+Apr 09, 2025 3:51:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 697
+Apr 09, 2025 3:51:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 698
+2025.04.09 15:51:23 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:24 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:24 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:25 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:26 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:27 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:28 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:28 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:30 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:31 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+Apr 09, 2025 3:51:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 775
+2025.04.09 15:51:30 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:33 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+Apr 09, 2025 3:51:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 791
+2025.04.09 15:51:33 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:34 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:39 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:40 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:40 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:41 WARN  Could not load snapshot text for C:\Users\amiin\Desktop\ScalaLogin\app.scala
+2025.04.09 15:51:42 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.09 15:51:42 INFO  time: compiled ScalaLogin_2071afaf6c in 0.88s
+2025.04.09 15:51:57 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.09 15:51:57 WARN  Invalid text document uri received from build server: file:///C:/Users/amiin/Desktop/ScalaLogin/FileHandlingManager/HttpOfThings/HttpOfthings.scala
+2025.04.09 15:51:57 INFO  time: compiled ScalaLogin_2071afaf6c in 0.27s
+Apr 09, 2025 3:52:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1020
+Apr 09, 2025 3:52:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1086
+Apr 09, 2025 3:53:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1424
+Apr 09, 2025 3:53:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1425
+Apr 09, 2025 3:53:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1431
+Apr 09, 2025 3:53:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1437
+Apr 09, 2025 3:53:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1438
+Apr 09, 2025 3:54:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1520
+Apr 09, 2025 3:54:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1588
+2025.04.09 15:54:12 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.09 15:54:12 INFO  time: compiled ScalaLogin_2071afaf6c in 0.8s
+Apr 09, 2025 6:19:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1619
+Apr 09, 2025 6:19:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1621
+Apr 09, 2025 6:20:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1692
+Apr 09, 2025 6:20:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1771
+Apr 09, 2025 6:20:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1813
+Apr 09, 2025 6:21:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1955
+Apr 09, 2025 6:21:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2173
+Apr 09, 2025 6:22:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2354
+Apr 09, 2025 6:22:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2502
+Apr 09, 2025 6:22:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2604
+Apr 09, 2025 6:23:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2908
+Apr 09, 2025 6:23:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2982
+Apr 09, 2025 6:24:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3343
+Apr 09, 2025 6:24:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3510
+Apr 09, 2025 6:24:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3711
+Apr 09, 2025 6:24:54 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3863
+Apr 09, 2025 6:24:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3876
+Apr 09, 2025 6:25:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4036
+Apr 09, 2025 6:25:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4085
+Apr 09, 2025 6:25:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4086
+Apr 09, 2025 6:25:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4087
+Apr 09, 2025 6:25:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4088
+Apr 09, 2025 6:25:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4090
+Apr 09, 2025 6:25:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4126
+Apr 09, 2025 6:25:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4130
+Apr 09, 2025 6:27:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4691
+Apr 09, 2025 6:27:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4769
+Apr 09, 2025 6:27:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4991
+Exception in thread "pool-6-thread-1" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:244)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:153)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025.04.09 18:28:18 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.09 18:28:20 WARN  Invalid text document uri received from build server: file:///C:/Users/amiin/Desktop/ScalaLogin/FileHandlingManager/HttpOfThings/HttpOfthings.scala
+2025.04.09 18:28:20 INFO  time: compiled ScalaLogin_2071afaf6c in 1.5s
+Apr 09, 2025 6:28:24 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\amiin\Desktop\ScalaLogin\.metals\.reports\metals-full\2025-03-16\r_empty-definition_(ScalaLogin_2071afaf6c)_08-02-16-574.md)
+Apr 09, 2025 6:29:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5122
+Apr 09, 2025 6:29:13 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\amiin\Desktop\ScalaLogin\.metals\.reports\metals-full\2025-03-16\r_empty-definition_(ScalaLogin_2071afaf6c)_08-02-16-574.md)
+2025.04.09 18:31:03 WARN  Could not find semantic tokens for: file:///C:/Users/amiin/Desktop/ScalaLogin/app.scala
+2025.04.09 18:31:04 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.09 18:31:05 WARN  Invalid text document uri received from build server: file:///C:/Users/amiin/Desktop/ScalaLogin/FileHandlingManager/HttpOfThings/HttpOfthings.scala
+2025.04.09 18:31:05 INFO  time: compiled ScalaLogin_2071afaf6c in 1.19s
+Exception in thread "pool-6-thread-2" java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.internal.pc.CompilerAccess.onCompilerJobQueue$$anonfun$1(CompilerAccess.scala:244)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:153)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025.04.09 18:33:28 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.09 18:33:28 WARN  Invalid text document uri received from build server: file:///C:/Users/amiin/Desktop/ScalaLogin/FileHandlingManager/HttpOfThings/HttpOfthings.scala
+2025.04.09 18:33:28 INFO  time: compiled ScalaLogin_2071afaf6c in 0.93s
+Apr 09, 2025 6:37:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5308
+2025.04.09 18:50:30 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.09 18:50:32 WARN  Invalid text document uri received from build server: file:///C:/Users/amiin/Desktop/ScalaLogin/FileHandlingManager/HttpOfThings/HttpOfthings.scala
+2025.04.09 18:50:32 INFO  time: compiled ScalaLogin_2071afaf6c in 2.18s
+2025.04.09 18:50:48 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.09 18:50:48 WARN  Invalid text document uri received from build server: file:///C:/Users/amiin/Desktop/ScalaLogin/FileHandlingManager/HttpOfThings/HttpOfthings.scala
+2025.04.09 18:50:48 INFO  time: compiled ScalaLogin_2071afaf6c in 0.54s
+Apr 09, 2025 8:47:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6042
+2025.04.09 20:48:03 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.09 20:48:04 WARN  Invalid text document uri received from build server: file:///C:/Users/amiin/Desktop/ScalaLogin/FileHandlingManager/HttpOfThings/HttpOfthings.scala
+2025.04.09 20:48:04 INFO  time: compiled ScalaLogin_2071afaf6c in 1.44s
+Apr 09, 2025 8:48:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6209
+Apr 09, 2025 8:48:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6234
+2025.04.09 20:48:24 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.09 20:48:24 WARN  Invalid text document uri received from build server: file:///C:/Users/amiin/Desktop/ScalaLogin/FileHandlingManager/HttpOfThings/HttpOfthings.scala
+2025.04.09 20:48:24 INFO  time: compiled ScalaLogin_2071afaf6c in 0.75s
+2025.04.09 20:48:43 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.09 20:48:43 WARN  Invalid text document uri received from build server: file:///C:/Users/amiin/Desktop/ScalaLogin/FileHandlingManager/HttpOfThings/HttpOfthings.scala
+2025.04.09 20:48:43 INFO  time: compiled ScalaLogin_2071afaf6c in 0.3s
+2025.04.09 20:48:50 INFO  time: compiled ScalaLogin_2071afaf6c in 9ms
+2025.04.09 20:48:54 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.09 20:48:54 WARN  Invalid text document uri received from build server: file:///C:/Users/amiin/Desktop/ScalaLogin/FileHandlingManager/HttpOfThings/HttpOfthings.scala
+2025.04.09 20:48:54 INFO  time: compiled ScalaLogin_2071afaf6c in 0.26s
+2025.04.09 20:49:02 INFO  time: compiled ScalaLogin_2071afaf6c in 12ms
+2025.04.09 20:49:21 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.09 20:49:21 WARN  Invalid text document uri received from build server: file:///C:/Users/amiin/Desktop/ScalaLogin/FileHandlingManager/HttpOfThings/HttpOfthings.scala
+2025.04.09 20:49:21 INFO  time: compiled ScalaLogin_2071afaf6c in 0.43s
+2025.04.10 07:00:49 INFO  Started: Metals version 1.5.2 in folders 'C:\Users\amiin\Desktop\ScalaLogin' for client Visual Studio Code 1.98.2.
+2025.04.10 07:00:54 INFO  no build target found for C:\Users\amiin\Desktop\ScalaLogin\app.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.10 07:00:55 INFO  Attempting to connect to the build server...
+2025.04.10 07:00:55 INFO  Running BSP server List(C:\Users\amiin\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Users\amiin\Desktop\ScalaLogin\.scala-build\ide-options-v2.json, --json-launcher-options, C:\Users\amiin\Desktop\ScalaLogin\.scala-build\ide-launcher-options.json, --envs-file, C:\Users\amiin\Desktop\ScalaLogin\.scala-build\ide-envs.json, C:\Users\amiin\Desktop\ScalaLogin)
+2025.04.10 07:01:01 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\amiin\Desktop\ScalaLogin\.metals\bsp.trace.json
+2025.04.10 07:01:02 INFO  BSP server: Checking https://github.com/coursier/jvm-index/raw/master/index.json
+2025.04.10 07:01:02 INFO  BSP server: Checked https://github.com/coursier/jvm-index/raw/master/index.json
+2025.04.10 07:01:02 INFO  BSP server: Downloading https://github.com/coursier/jvm-index/raw/master/index.json
+2025.04.10 07:01:02 INFO  BSP server: Downloaded https://github.com/coursier/jvm-index/raw/master/index.json
+2025.04.10 07:01:11 INFO  BSP server: Starting compilation server
+2025.04.10 07:01:22 INFO  time: Connected to build server in 26s
+2025.04.10 07:01:22 INFO  Connected to Build server: scala-cli v1.6.2
+2025.04.10 07:01:22 INFO  time: Imported build in 0.18s
+2025.04.10 07:01:24 WARN  Invalid text document uri received from build server: file:///C:/Users/amiin/Desktop/ScalaLogin/FileHandlingManager/HttpOfThings/HttpOfthings.scala
+2025.04.10 07:01:24 INFO  BSP server: No class, trait or object is defined in the compilation unit.
+The incremental compiler cannot record the dependency information in such case.
+Some errors like unused import referring to a non-existent class might not be reported.
+
+2025.04.10 07:01:33 INFO  time: indexed workspace in 10s
+Apr 10, 2025 7:10:09 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 88
+Apr 10, 2025 7:10:09 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 100
+Apr 10, 2025 7:10:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 193
+Apr 10, 2025 7:10:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 197
+Apr 10, 2025 7:10:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 199
+Apr 10, 2025 7:10:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 202
+Apr 10, 2025 7:10:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 204
+Apr 10, 2025 7:10:28 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 215
+Apr 10, 2025 7:10:51 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\amiin\Desktop\ScalaLogin\.metals\.reports\metals-full\2025-04-10\r_compiler-error_(ScalaLogin_2071afaf6c)_07-10-51-931.md
+Apr 10, 2025 7:11:24 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\amiin\Desktop\ScalaLogin\.metals\.reports\metals-full\2025-03-16\r_empty-definition_(ScalaLogin_2071afaf6c)_08-02-16-574.md)
+Apr 10, 2025 7:16:18 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 512
+Apr 10, 2025 7:16:51 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\amiin\Desktop\ScalaLogin\.metals\.reports\metals-full\2025-04-10\r_compiler-error_(ScalaLogin_2071afaf6c)_07-16-51-625.md
+2025.04.10 07:16:58 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:17:04 WARN  Invalid text document uri received from build server: file:///C:/Users/amiin/Desktop/ScalaLogin/FileHandlingManager/HttpOfThings/HttpOfthings.scala
+2025.04.10 07:17:04 INFO  time: compiled ScalaLogin_2071afaf6c in 5.62s
+2025.04.10 07:18:30 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:18:31 INFO  time: compiled ScalaLogin_2071afaf6c in 1.73s
+2025.04.10 07:18:31 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:18:31 INFO  time: compiled ScalaLogin_2071afaf6c in 0.27s
+2025.04.10 07:18:45 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:18:46 INFO  time: compiled ScalaLogin_2071afaf6c in 1.5s
+2025.04.10 07:18:46 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:18:46 INFO  time: compiled ScalaLogin_2071afaf6c in 0.58s
+Apr 10, 2025 7:19:13 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 895
+2025.04.10 07:19:17 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:19:17 INFO  time: compiled ScalaLogin_2071afaf6c in 0.21s
+Apr 10, 2025 7:19:21 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 943
+2025.04.10 07:19:22 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:19:22 INFO  time: compiled ScalaLogin_2071afaf6c in 0.23s
+2025.04.10 07:19:28 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:19:28 INFO  time: compiled ScalaLogin_2071afaf6c in 0.25s
+2025.04.10 07:19:48 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:19:48 INFO  time: compiled ScalaLogin_2071afaf6c in 0.31s
+2025.04.10 07:19:59 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:19:59 INFO  time: compiled ScalaLogin_2071afaf6c in 0.24s
+Apr 10, 2025 7:20:01 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1115
+2025.04.10 07:20:07 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:20:07 INFO  time: compiled ScalaLogin_2071afaf6c in 0.28s
+2025.04.10 07:20:12 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:20:12 INFO  time: compiled ScalaLogin_2071afaf6c in 0.87s
+2025.04.10 07:20:24 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:20:24 INFO  time: compiled ScalaLogin_2071afaf6c in 0.17s
+Apr 10, 2025 7:20:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1237
+Apr 10, 2025 7:20:27 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1243
+Apr 10, 2025 7:20:28 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1258
+2025.04.10 07:20:59 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:20:59 INFO  time: compiled ScalaLogin_2071afaf6c in 0.61s
+Apr 10, 2025 7:24:19 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\amiin\Desktop\ScalaLogin\.metals\.reports\metals-full\2025-03-16\r_empty-definition_(ScalaLogin_2071afaf6c)_08-02-16-574.md)
+Apr 10, 2025 7:24:49 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\amiin\Desktop\ScalaLogin\.metals\.reports\metals-full\2025-03-16\r_empty-definition_(ScalaLogin_2071afaf6c)_08-02-16-574.md)
+Apr 10, 2025 7:24:50 AM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\amiin\Desktop\ScalaLogin\.metals\.reports\metals-full\2025-03-16\r_empty-definition_(ScalaLogin_2071afaf6c)_08-02-16-574.md)
+Apr 10, 2025 7:26:34 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\amiin\Desktop\ScalaLogin\.metals\.reports\metals-full\2025-04-10\r_compiler-error_(ScalaLogin_2071afaf6c)_07-26-34-949.md
+2025.04.10 07:26:37 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:26:37 INFO  time: compiled ScalaLogin_2071afaf6c in 0.15s
+Apr 10, 2025 7:26:41 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\amiin\Desktop\ScalaLogin\.metals\.reports\metals-full\2025-04-10\r_compiler-error_(ScalaLogin_2071afaf6c)_07-26-41-468.md
+Apr 10, 2025 7:26:44 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report C:\Users\amiin\Desktop\ScalaLogin\.metals\.reports\metals-full\2025-04-10\r_compiler-error_(ScalaLogin_2071afaf6c)_07-26-44-777.md
+2025.04.10 07:26:47 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:26:47 INFO  time: compiled ScalaLogin_2071afaf6c in 0.15s
+Apr 10, 2025 7:30:05 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1959
+2025.04.10 07:30:08 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:30:08 INFO  time: compiled ScalaLogin_2071afaf6c in 0.18s
+2025.04.10 07:30:11 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:30:11 INFO  time: compiled ScalaLogin_2071afaf6c in 0.95s
+Apr 10, 2025 7:30:35 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2105
+Apr 10, 2025 7:30:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2134
+Apr 10, 2025 7:30:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2135
+2025.04.10 07:30:44 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:30:44 INFO  time: compiled ScalaLogin_2071afaf6c in 0.14s
+2025.04.10 07:30:48 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:30:48 INFO  time: compiled ScalaLogin_2071afaf6c in 0.16s
+2025.04.10 07:30:56 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:30:56 INFO  time: compiled ScalaLogin_2071afaf6c in 0.57s
+2025.04.10 07:31:11 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:31:11 INFO  time: compiled ScalaLogin_2071afaf6c in 0.6s
+2025.04.10 07:35:18 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:35:18 INFO  time: compiled ScalaLogin_2071afaf6c in 0.13s
+Apr 10, 2025 7:35:19 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2540
+Apr 10, 2025 7:35:20 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2547
+2025.04.10 07:35:21 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:35:21 INFO  time: compiled ScalaLogin_2071afaf6c in 0.48s
+2025.04.10 07:35:21 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:35:22 INFO  time: compiled ScalaLogin_2071afaf6c in 0.7s
+2025.04.10 07:38:36 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:38:36 WARN  Invalid text document uri received from build server: file:///C:/Users/amiin/Desktop/ScalaLogin/FileHandlingManager/HttpOfThings/HttpOfthings.scala
+2025.04.10 07:38:36 INFO  time: compiled ScalaLogin_2071afaf6c in 0.43s
+2025.04.10 07:41:53 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 07:41:53 INFO  time: compiled ScalaLogin_2071afaf6c in 0.57s
+Apr 10, 2025 7:42:17 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2944
+Apr 10, 2025 7:42:19 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2981
+Apr 10, 2025 7:42:19 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2992
+Apr 10, 2025 7:59:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3100
+Apr 10, 2025 7:59:38 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3107
+Apr 10, 2025 8:00:39 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3374
+Apr 10, 2025 8:02:07 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3444
+Apr 10, 2025 8:03:32 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3737
+Apr 10, 2025 8:03:32 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3738
+Apr 10, 2025 8:04:00 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3908
+2025.04.10 08:04:54 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 08:04:54 WARN  Invalid text document uri received from build server: file:///C:/Users/amiin/Desktop/ScalaLogin/FileHandlingManager/HttpOfThings/HttpOfthings.scala
+2025.04.10 08:04:54 INFO  time: compiled ScalaLogin_2071afaf6c in 0.55s
+Apr 10, 2025 8:04:57 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4111
+Apr 10, 2025 8:05:37 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4211
+Apr 10, 2025 8:05:38 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4219
+Apr 10, 2025 8:05:38 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4220
+Apr 10, 2025 8:05:59 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4405
+Apr 10, 2025 8:06:48 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4554
+2025.04.10 08:06:56 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 08:06:56 WARN  Invalid text document uri received from build server: file:///C:/Users/amiin/Desktop/ScalaLogin/FileHandlingManager/HttpOfThings/HttpOfthings.scala
+2025.04.10 08:06:56 INFO  time: compiled ScalaLogin_2071afaf6c in 0.19s
+Apr 10, 2025 9:21:42 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4950
+2025.04.10 09:21:53 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 09:21:53 INFO  time: compiled ScalaLogin_2071afaf6c in 0.51s
+2025.04.10 09:23:10 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 09:23:10 WARN  Invalid text document uri received from build server: file:///C:/Users/amiin/Desktop/ScalaLogin/FileHandlingManager/HttpOfThings/HttpOfthings.scala
+2025.04.10 09:23:10 INFO  time: compiled ScalaLogin_2071afaf6c in 0.66s
+Apr 10, 2025 9:24:04 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5690
+Apr 10, 2025 9:24:05 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5697
+Apr 10, 2025 9:24:12 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5734
+Apr 10, 2025 9:24:14 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5756
+Apr 10, 2025 9:24:14 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5760
+Apr 10, 2025 9:24:14 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5761
+Apr 10, 2025 9:27:03 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6170
+Apr 10, 2025 9:27:04 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6171
+Apr 10, 2025 9:27:04 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6180
+2025.04.10 09:27:26 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 09:27:26 WARN  Invalid text document uri received from build server: file:///C:/Users/amiin/Desktop/ScalaLogin/FileHandlingManager/HttpOfThings/HttpOfthings.scala
+2025.04.10 09:27:26 INFO  time: compiled ScalaLogin_2071afaf6c in 0.36s
+Apr 10, 2025 9:27:28 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6300
+Apr 10, 2025 9:27:28 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6301
+Apr 10, 2025 9:27:28 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6304
+2025.04.10 16:39:05 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 16:39:05 INFO  time: compiled ScalaLogin_2071afaf6c in 0.51s
+Apr 10, 2025 4:39:58 PM scala.meta.internal.metals.StdReporter $anonfun$create$1
+WARNING: empty definition using pc, found symbol in pc: `<none>`. (full report at: C:\Users\amiin\Desktop\ScalaLogin\.metals\.reports\metals-full\2025-03-16\r_empty-definition_(ScalaLogin_2071afaf6c)_08-02-16-574.md)
+Apr 10, 2025 4:40:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6642
+Apr 10, 2025 4:40:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6697
+2025.04.10 16:40:27 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 16:40:27 INFO  time: compiled ScalaLogin_2071afaf6c in 0.28s
+2025.04.10 16:41:01 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 16:41:01 INFO  time: compiled ScalaLogin_2071afaf6c in 0.24s
+Apr 10, 2025 4:41:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6879
+Apr 10, 2025 4:41:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6883
+2025.04.10 16:41:33 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 16:41:33 INFO  time: compiled ScalaLogin_2071afaf6c in 0.52s
+Apr 10, 2025 4:41:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6939
+Apr 10, 2025 4:42:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6951
+Apr 10, 2025 4:42:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6952
+Apr 10, 2025 4:42:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 6953
+2025.04.10 16:43:10 INFO  Shutting down server
+2025.04.10 16:43:10 INFO  shutting down Metals
+2025.04.10 16:43:10 INFO  Shut down connection with build server.
+2025.04.10 16:43:10 INFO  Exiting server
+2025.04.10 16:44:06 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at c:\Users\amiin\desktop\ScalaLogin\.metals\lsp.trace.json or C:\Users\amiin\AppData\Local\scalameta\metals\cache\lsp.trace.json
+2025.04.10 16:44:11 INFO  logging to files C:\Users\amiin\Desktop\ScalaLogin\.metals\metals.log
+2025.04.10 16:44:11 INFO  Started: Metals version 1.5.2 in folders 'C:\Users\amiin\Desktop\ScalaLogin' for client Visual Studio Code 1.99.1.
+2025.04.10 16:44:13 INFO  no build target found for C:\Users\amiin\Desktop\ScalaLogin\app.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.10 16:44:17 INFO  no build target found for C:\Users\amiin\Desktop\ScalaLogin\app.scala. Using presentation compiler with project's scala-library version: 3.3.5
+2025.04.10 16:44:17 INFO  Attempting to connect to the build server...
+2025.04.10 16:44:17 INFO  Running BSP server List(C:\Users\amiin\AppData\Local\Coursier\data\bin\.scala-cli.aux.exe, bsp, --json-options, C:\Users\amiin\Desktop\ScalaLogin\.scala-build\ide-options-v2.json, --json-launcher-options, C:\Users\amiin\Desktop\ScalaLogin\.scala-build\ide-launcher-options.json, --envs-file, C:\Users\amiin\Desktop\ScalaLogin\.scala-build\ide-envs.json, C:\Users\amiin\Desktop\ScalaLogin)
+2025.04.10 16:44:22 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at C:\Users\amiin\Desktop\ScalaLogin\.metals\bsp.trace.json
+2025.04.10 16:44:25 INFO  time: Connected to build server in 8.03s
+2025.04.10 16:44:25 INFO  Connected to Build server: scala-cli v1.6.2
+2025.04.10 16:44:27 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 16:44:27 INFO  time: compiled ScalaLogin_2071afaf6c in 0.79s
+2025.04.10 16:44:28 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 16:44:28 INFO  time: compiled ScalaLogin_2071afaf6c in 0.74s
+2025.04.10 16:44:34 INFO  time: indexed workspace in 8.88s
+2025.04.10 16:44:36 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 16:44:36 INFO  time: compiled ScalaLogin_2071afaf6c in 0.6s
+Apr 10, 2025 4:45:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 95
+2025.04.10 16:45:53 INFO  compiling scalalogin_2071afaf6c (1 scala source)
+2025.04.10 16:45:53 INFO  time: compiled ScalaLogin_2071afaf6c in 0.39s

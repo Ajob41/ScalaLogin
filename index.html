@@ -6,19 +6,14 @@
   <title>Document</title>
 </head>
 <body>
-  <button>click</button>
+
+  <button onclick=window.location.href="/client.html">Go To</button>
+
+
   <p id = "msg"></p>
   <script>
-    fetch("http://localhost:3000/message")
-    .then(function(response){
-      return response.text();
-    })
-    .then(function(data){
-      document.querySelector("#msg").textContent = data;
-    })
-    .catch(function(error){
-      console.log("something went wrong");
-    })
+    
+    
   </script>
 </body>
 </html>

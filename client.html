@@ -83,7 +83,7 @@
         </div>
     </div>
     <script>
-        const sendButton = document.querySelector("#send");
+        const sendButtonElement = document.querySelector("#send");
         let inputField = document.querySelector("input");
         const messageMembrane = document.getElementById("message-membrane");
         const isInputFieldEmpty = function (inputElement) {
@@ -92,28 +92,29 @@
         const isSendButtonClicked = function (sendButtonElement, event) {
             if (event.target === sendButtonElement && isInputFieldEmpty(inputField) === true) {
                 alert("please fill the input field")
+            } else if (event.target === sendButtonElement && isInputFieldEmpty(inputField) === false) {
+                alert("is filled")
             }
-            dataToBeSent(inputField.value)
+
+            console.log(dataToBeSent(inputField.value))
         }
         const dataToBeSent = function (data) {
             return data;
         }
         const thenSendMessage = function (message) {
-            const request = new Request("http://localhost:3000/message", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "text/html"
-                },
-                body: inputField.value
-            })
+            // const request = new Request("http://localhost:3000/message", {
+            //     method: "POST",
+            //     headers: {
+            //         "Content-Type": "text/html"
+            //     },
+            //     body: inputField.value
+            // })
 
         }
         const eventPortal = function (event) {
 
-            if (isSendButtonClicked(sendButton, event) === true) {
-                console.log(inputField.value)
-            }
-
+            isSendButtonClicked(sendButtonElement, event);
+            
         }
         messageMembrane.
             addEventListener("click", eventPortal)
