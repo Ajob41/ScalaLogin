@@ -89,26 +89,21 @@
         const isInputFieldEmpty = function (inputElement) {
             return inputElement.value.length < 1;
         }
-        const isSendButtonClicked = function (sendButtonElement, event) {
-            if (event.target === sendButtonElement && isInputFieldEmpty(inputField) === true) {
-                alert("please fill the input field")
-            }
-            if (event.target === sendButtonElement && isInputFieldEmpty(inputField) === false) {
-                alert("is filled")
-                const data = dataToBeSent(inputField.value);
-                sendMessage(data);
-            }
+        const sendButtonClicked = function (sendButtonElement, event) {
 
-            
+            if (event.target === sendButtonElement && isInputFieldEmpty(inputField) === true) {
+                alert("please fill the input")
+            }
+            return event.target === sendButtonElement && isInputFieldEmpty(inputField) === false;
         }
         const dataToBeSent = function (data) {
             return data;
         }
-        const sendMessage = function (data) {
+        const thenSendMessage = function (data) {
             const request = new Request("http://localhost:3000/message", {
                 method: "POST",
                 headers: {
-                    "Content-Type": "text/html"
+                    "Content-Type": "text/plain"
                 },
                 body: data
             })
@@ -116,8 +111,11 @@
         }
         const eventPortal = function (event) {
 
-            isSendButtonClicked(sendButtonElement, event);
-            
+            const yes = sendButtonClicked(sendButtonElement, event);
+            if (yes === true) {
+                theSendMessage(inputField.value)
+            }
+
         }
         messageMembrane.
             addEventListener("click", eventPortal)
