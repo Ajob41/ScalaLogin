@@ -92,23 +92,26 @@
         const isSendButtonClicked = function (sendButtonElement, event) {
             if (event.target === sendButtonElement && isInputFieldEmpty(inputField) === true) {
                 alert("please fill the input field")
-            } else if (event.target === sendButtonElement && isInputFieldEmpty(inputField) === false) {
+            }
+            if (event.target === sendButtonElement && isInputFieldEmpty(inputField) === false) {
                 alert("is filled")
+                const data = dataToBeSent(inputField.value);
+                sendMessage(data);
             }
 
-            console.log(dataToBeSent(inputField.value))
+            
         }
         const dataToBeSent = function (data) {
             return data;
         }
-        const thenSendMessage = function (message) {
-            // const request = new Request("http://localhost:3000/message", {
-            //     method: "POST",
-            //     headers: {
-            //         "Content-Type": "text/html"
-            //     },
-            //     body: inputField.value
-            // })
+        const sendMessage = function (data) {
+            const request = new Request("http://localhost:3000/message", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "text/html"
+                },
+                body: data
+            })
 
         }
         const eventPortal = function (event) {
