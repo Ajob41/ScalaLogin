@@ -15,8 +15,9 @@ class Server {
   }
   def Start(): Server = {
     try {
-      httpServer.start() // will throw if httpServer is null
-      println(s"Server started at $atWhere")
+      //this.EstablishConnection("").atWhere // will throw if httpServer is null
+      this.httpServer.start();
+      
     } catch {
       case e: NullPointerException =>
         println(
@@ -26,6 +27,14 @@ class Server {
     return this;
   }
   def AtWhere(): Unit = {
-    println(atWhere)
+    try {
+      this.httpServer.start();
+      println(s"Server started at $atWhere")
+    }catch{
+      case e:NullPointerException => {
+        println("Can't specify Location")
+      }
+    }
+
   }
 }
