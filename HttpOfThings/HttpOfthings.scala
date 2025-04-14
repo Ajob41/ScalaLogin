@@ -1,28 +1,31 @@
 import com.sun.net.httpserver.{HttpServer, HttpHandler, HttpExchange}
-def isHttpMethodOf(httpMethod: String, request: HttpExchange): Unit = {
-  httpMethod.toUpperCase match {
-    case "POST" => isPostMethod(request)
-    case "GET"  => isGetMethod(request)
+import java.nio.charset.StandardCharsets
+import java.net.InetSocketAddress
+
+class Server {
+  var port: Int = 0;
+  var atWhere: String = "";
+  var httpServer: HttpServer = null;
+  def EstablishConnection(serverAddress: String): Server = {
+    port = serverAddress.split(":").last.toInt;
+    httpServer = HttpServer.create(InetSocketAddress(port), 1)
+    httpServer.setExecutor(null)
+    atWhere = serverAddress;
+    return this;
   }
-
-}
-
-def isPostMethod(request: HttpExchange): Boolean = {
-  return request.getRequestMethod.equalsIgnoreCase("POST")
-}
-
-def isGetMethod(request: HttpExchange): Boolean = {
-  return request.getRequestMethod.equalsIgnoreCase("GET")
-}
-
-
-
-
-
-def replyBack(data: String): String = {
-  "";
-}
-
-def getData(data: String): String = {
-  return data;
+  def Start(): Server = {
+    try {
+      httpServer.start() // will throw if httpServer is null
+      println(s"Server started at $atWhere")
+    } catch {
+      case e: NullPointerException =>
+        println(
+          "Server has not been established. Call establishConnection() first."
+        )
+    }
+    return this;
+  }
+  def AtWhere(): Unit = {
+    println(atWhere)
+  }
 }
