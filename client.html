@@ -83,22 +83,24 @@
         </div>
     </div>
     <script>
+        // send button to be used for sending data to the server
         const sendButtonElement = document.querySelector("#send-button");
         let inputField = document.querySelector("input");
         const messageMembrane = document.getElementById("message-membrane");
+        // check if input field does not contains any data
         const isInputFieldEmpty = function (inputElement) {
             return inputElement.value.length < 1;
         }
+        // check if send button is being clicked
         const sendButtonClicked = function (sendButtonElement, event) {
-
+            // check if sendButton is being clicked and input field is empty
             if (event.target === sendButtonElement && isInputFieldEmpty(inputField) === true) {
                 alert("please fill the input")
+            } else {
+                const dataToBeSent = inputField.value;
+                thenSendMessage(dataToBeSent)
+
             }
-
-
-            const dataToBeSent = inputField.value;
-            thenSendMessage(dataToBeSent)
-
         }
 
         const thenSendMessage = function (data) {
@@ -121,6 +123,7 @@
                 })
 
         }
+        // this is the scope of click event
         const eventPortal = function (event) {
             sendButtonClicked(sendButtonElement, event);
         }

@@ -11,31 +11,30 @@ class Server {
   def EstablishConnection(port: Int): Server = {
     establishConnectionMethodCalled = true;
     atWhere = atWhere + port
-    httpServer = HttpServer.create(InetSocketAddress(port), 1)
+    httpServer = HttpServer.create(InetSocketAddress(port), 1);
     httpServer.setExecutor(null)
     return this;
   }
   def Start(): Server = {
     startMethod = true;
-    if(establishConnectionMethodCalled == true && httpServer != null){
+    if (establishConnectionMethodCalled == true && httpServer != null) {
       this.httpServer.start();
+    } else {
+      println("EstablishConnection method not called")
     }
-    println("EstablishConnection method not called")
+
     return this;
   }
   def AtWhere(): Unit = {
-    if(startMethod == true && establishConnectionMethodCalled == true && atWhere != null){
+    if (startMethod == true && establishConnectionMethodCalled == true && atWhere != null) {
       println(atWhere)
-    }
-    if(establishConnectionMethodCalled == true && startMethod == false){
+    }else if (establishConnectionMethodCalled == true && startMethod == false) {
       println("Start() method not called");
-    }
-    if(establishConnectionMethodCalled == false && startMethod == true){
-      println(this.Start())
-    }
-    if(establishConnectionMethodCalled == false && startMethod == false) {
+    }else if (establishConnectionMethodCalled == false && startMethod == false) {
       println("EstablishConnection() and Start() method not called");
+    }else {
+      println("Uknown")
     }
-    println("Uknown")
+    
   }
 }

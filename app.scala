@@ -8,7 +8,7 @@ import scala.collection.mutable.ListBuffer
 
 @main def main(): Unit = {
   var server = new Server()
-  
+  .Start()
   .AtWhere();
   
 
