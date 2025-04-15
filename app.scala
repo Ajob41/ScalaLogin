@@ -7,9 +7,10 @@ import java.nio.charset.StandardCharsets
 import scala.collection.mutable.ListBuffer
 
 @main def main(): Unit = {
-  var server = new Server();
-  server
-  .Start()
-  .AtWhere()
+  var server = new Server()
+  
+  .AtWhere();
+  
+
   
 }
