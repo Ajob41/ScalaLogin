@@ -1,40 +1,37 @@
 import com.sun.net.httpserver.{HttpServer, HttpHandler, HttpExchange}
 import java.nio.charset.StandardCharsets
 import java.net.InetSocketAddress
-
-class Server {
-  private var port: Int = 0;
-  private var atWhere: String = "http://localhost:";
-  private var httpServer: HttpServer = null;
-  private var establishConnectionMethodCalled: Boolean = false;
-  private var startMethod: Boolean = false;
-  def EstablishConnection(port: Int): Server = {
-    establishConnectionMethodCalled = true;
-    atWhere = atWhere + port
-    httpServer = HttpServer.create(InetSocketAddress(port), 1);
-    httpServer.setExecutor(null)
+trait ServerAddress {
+   var AtWhere:String = s"http://localhost:"
+}
+class Server extends ServerAddress() {
+ 
+  private var connectionStarted: Boolean = false;
+  private var disconnected = false;
+  private var net: HttpServer = null;
+  private var portNumber:Int = 0;
+  def AssignPort(port: Int): Server = {
+    net = HttpServer.create(InetSocketAddress(port), 1)
+    portNumber = port;
+    net.setExecutor(null)
     return this;
   }
-  def Start(): Server = {
-    startMethod = true;
-    if (establishConnectionMethodCalled == true && httpServer != null) {
-      this.httpServer.start();
-    } else {
-      println("EstablishConnection method not called")
-    }
+  def StartConnection(): Server = {
 
+    net.start();
+    this.AtWhere+=portNumber
     return this;
+   
   }
-  def AtWhere(): Unit = {
-    if (startMethod == true && establishConnectionMethodCalled == true && atWhere != null) {
-      println(atWhere)
-    }else if (establishConnectionMethodCalled == true && startMethod == false) {
-      println("Start() method not called");
-    }else if (establishConnectionMethodCalled == false && startMethod == false) {
-      println("EstablishConnection() and Start() method not called");
-    }else {
-      println("Uknown")
-    }
-    
+  def Disconnect(): Unit = {
+    net.stop(1)
+    disconnected = true;
   }
+  def Disconnected():Boolean = {
+      if(disconnected == true){
+         println("Server is disconnected")
+      }
+      return disconnected;
+  }
+  
 }

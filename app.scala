@@ -6,11 +6,14 @@ import java.nio.charset.StandardCharsets
 
 import scala.collection.mutable.ListBuffer
 
-@main def main(): Unit = {
-  var server = new Server()
-  .Start()
-  .AtWhere();
-  
 
+@main def main(): Unit = {
+  var server = Server();
+  server.AssignPort(3000)
+  .StartConnection()
+  .AtWhere
+ 
+  
+  
   
 }
