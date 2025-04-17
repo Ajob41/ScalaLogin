@@ -2,14 +2,14 @@ import com.sun.net.httpserver.{HttpServer, HttpHandler, HttpExchange}
 import java.nio.charset.StandardCharsets
 import java.net.InetSocketAddress
 
-class ServerAddress {
+abstract class ServerAddress {
   var AtWhere: String = s"http://localhost:"
-  protected var connectionStarted: Boolean = false;
-  protected var disconnected = false;
-  protected var net: HttpServer = null;
-  protected var portNumber: Int = 0;
-  protected def ServerConnected(): Boolean = ???
-  protected def Disconnect():Unit = ???
+  val connectionStarted: Boolean = false;
+  val disconnected = false;
+  var net: HttpServer = null;
+  var portNumber: Int = 0;
+  def ServerConnected(): Boolean = {}
+  def Disconnect():Unit = {}
 
 }
 class Server extends ServerAddress() {
