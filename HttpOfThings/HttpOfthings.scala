@@ -1,37 +1,44 @@
 import com.sun.net.httpserver.{HttpServer, HttpHandler, HttpExchange}
 import java.nio.charset.StandardCharsets
 import java.net.InetSocketAddress
-trait ServerAddress {
-   var AtWhere:String = s"http://localhost:"
+
+class ServerAddress {
+  var AtWhere: String = s"http://localhost:"
+  protected var connectionStarted: Boolean = false;
+  protected var disconnected = false;
+  protected var net: HttpServer = null;
+  protected var portNumber: Int = 0;
+  protected def ServerConnected(): Boolean = ???
+  protected def Disconnect():Unit = ???
+
 }
 class Server extends ServerAddress() {
- 
-  private var connectionStarted: Boolean = false;
-  private var disconnected = false;
-  private var net: HttpServer = null;
-  private var portNumber:Int = 0;
   def AssignPort(port: Int): Server = {
-    net = HttpServer.create(InetSocketAddress(port), 1)
-    portNumber = port;
-    net.setExecutor(null)
+    this.net = HttpServer.create(InetSocketAddress(port), 1)
+    this.portNumber = port;
+    this.net.setExecutor(null)
     return this;
   }
-  def StartConnection(): Server = {
-
+  def StartConnection(): ServerAddress = {
     net.start();
-    this.AtWhere+=portNumber
-    return this;
-   
+    connectionStarted = true;
+    var serverAddress = new ServerAddress()
+    serverAddress.AtWhere += portNumber;
+    return new ServerAddress();
+
   }
-  def Disconnect(): Unit = {
+  override def ServerConnected(): Boolean = {
+   if(connectionStarted == true) {
+      println("Server is Connected")
+      return true;
+   }else {
+      println("Server is not connected")
+      return false;
+   }
+  }
+  override protected def Disconnect(): Unit = {
     net.stop(1)
     disconnected = true;
   }
-  def Disconnected():Boolean = {
-      if(disconnected == true){
-         println("Server is disconnected")
-      }
-      return disconnected;
-  }
-  
+
 }
