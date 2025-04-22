@@ -2,9 +2,6 @@ import com.sun.net.httpserver.{HttpServer, HttpHandler, HttpExchange}
 import java.net.InetSocketAddress
 import javax.smartcardio.ResponseAPDU
 
-
-
-
 trait ServerAddress {
   protected var net: HttpServer = null;
   var portNumber: Int = 0;
@@ -24,59 +21,61 @@ class Server extends ServerAddress {
       net.start();
       this.serverState = true;
       println(s"Server started")
-    }else {
+    } else {
       println("Server is running by previous call")
     }
-    
+
   }
-  def stopServer(): Server = {
+  def stopServer(): Unit = {
     if (this.net != null) {
       net.stop(1)
       net = null;
       this.serverState = false;
       println("Server stopped")
     }
-    return this;
   }
 
-  def atWhichPort:Server = {
-    if(this.net == null && this.serverState == false) {
+  def atWhichPort: Unit = {
+    if (this.net == null && this.serverState == false) {
       println("Can't locate which port check if server is running")
-    }else {
-       println(s"Server is running a http://localhost:${this.portNumber}")
+    } else {
+      println(s"Server is running a http://localhost:${this.portNumber}")
     }
-    
-    return this;
   }
 
-  def httpReqRespHandler(callback:(req:Request,resp:Response) => Unit):Server = {
-    this.net.createContext("/", new HttpHandler {
-       def handle(exchange: HttpExchange): Unit = {
-        val req = Request(exchange)
-        val resp = Response(exchange)
-       }
-    })
-    return this;
+  def httpReqRespHandler(
+      callback: (req: Request, resp: Response) => Unit
+  ): Unit = {
+    net.createContext(
+      "/",
+      new HttpHandler {
+        def handle(exchange: HttpExchange): Unit = {
+          val req = Request(exchange)
+          val resp = Response(exchange)
+        }
+      }
+    )
+
   }
 
 }
 
-case class Request(req:HttpExchange) {
-  val path:String = req.getRequestURI().getPath();
-  val method:String = req.getRequestMethod();
+class Request(req: HttpExchange) {
+  val path: String = req.getRequestURI().getPath();
+  val method: String = req.getRequestMethod();
 }
-case class Response(resp:HttpExchange){
-  def setHttpHeader(key:String,value:String):Response = {
-    resp.getResponseHeaders().set(key,value)
+class Response(resp: HttpExchange) {
+  def setHttpHeader(key: String, value: String): Response = {
+    resp.getResponseHeaders().set(key, value)
     return this;
   }
-   def send(content: String): Unit = {
-    val bytes = content.getBytes("UTF-8")
+  def send(content: String): Unit = {
+    val bytes = content.getBytes()
     resp.sendResponseHeaders(200, bytes.length)
     val os = resp.getResponseBody
     os.write(bytes)
     os.close()
-}
+  }
 }
 // class HttpOfthings {
 //   def httpOfThings(callback :(req:Option[HttpExchange],resp:Option[HttpServer]) => Unit):HttpServer = {
