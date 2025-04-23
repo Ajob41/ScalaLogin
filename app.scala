@@ -5,15 +5,13 @@ import java.nio.file.{Files, Paths}
 import java.nio.charset.StandardCharsets
 
 import scala.collection.mutable.ListBuffer
-
+import java.util.concurrent.CompletableFuture
+import scala.annotation.meta.setter
 
 @main def main(): Unit = {
-  var server = Server();
-  server.AssignPort(3000)
-  .StartConnection()
-  .AtWhere
- 
-  
-  
-  
+  var server = new Server();
+  server.
+  setPort(3000)
+  server.startServer()
 }
+

@@ -3,30 +3,26 @@
  * @param {number} n
  * @return {boolean}
  */
-var canPlaceFlowers = function (flowerbed, n) {
-  var count0 = 0;
-  var count1 = 0;
-  for (var i = 0; i < flowerbed.length; i++) {
-    if (flowerbed[i] === 0) {
-      count0++;
-    } else if (flowerbed[i] === 1) {
-      count1++
-    }
-  }
-
+function canPlaceFlowers(flowerbed, n) {
+    if (n === 0) return true;
   
-  let differance = count0-n
-  if(isOdd(differance)){
-    return true;
-  }else {
+    for (let i = 0; i < flowerbed.length; i++) {
+      if (
+        flowerbed[i] === 0 &&
+        (i === 0 || flowerbed[i - 1] === 0) &&
+        (i === flowerbed.length - 1 || flowerbed[i + 1] === 0)
+      ) {
+        console.log(flowerbed[i],flowerbed[i-1])
+        flowerbed[i] = 1;
+        n--;
+        if (n === 0) return true;
+      }
+    }
+  
     return false;
   }
-}
-
-let isOdd = function(number) {
-  return number%2 !== 0;
-}
-let result = canPlaceFlowers([1,0,0,0,1],2)
-
-console.log(result)
-
+  
+  // Example usage:
+  console.log(canPlaceFlowers([1, 0, 0, 0, 1], 1)); // true
+  console.log(canPlaceFlowers([1, 0, 0, 0, 1], 2)); // false
+  

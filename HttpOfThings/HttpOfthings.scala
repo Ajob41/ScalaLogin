@@ -1,84 +1,33 @@
-import com.sun.net.httpserver.{HttpServer, HttpHandler, HttpExchange}
+import com.sun.net.httpserver.{HttpServer, HttpExchange}
 import java.net.InetSocketAddress
-import javax.smartcardio.ResponseAPDU
 
-trait ServerAddress {
-  protected var net: HttpServer = null;
-  var portNumber: Int = 0;
-  protected var serverState: Boolean = false;
-
-}
-class Server extends ServerAddress {
-
-  def setPort(port: Int): Server = {
-    this.portNumber = port
-    return this
+// Only returned after startServer, contains post-start methods
+class ServerOps(private val net: HttpServer, private val port: Int) {
+  def getPort: Unit = {
+    println(s"Port: $port")
   }
 
-  def startServer(): Unit = {
-    if (this.net == null) {
-      net = HttpServer.create(InetSocketAddress(portNumber), 1);
-      net.start();
-      this.serverState = true;
-      println(s"Server started")
-    } else {
-      println("Server is running by previous call")
-    }
-
+  def getAddress: Unit = {
+    println(s"Address: ${net.getAddress}")
   }
+
   def stopServer(): Unit = {
-    if (this.net != null) {
-      net.stop(1)
-      net = null;
-      this.serverState = false;
-      println("Server stopped")
-    }
-  }
-
-  def atWhichPort: Unit = {
-    if (this.net == null && this.serverState == false) {
-      println("Can't locate which port check if server is running")
-    } else {
-      println(s"Server is running a http://localhost:${this.portNumber}")
-    }
-  }
-
-  def httpReqRespHandler(
-      callback: (req: Request, resp: Response) => Unit
-  ): Unit = {
-    net.createContext(
-      "/",
-      new HttpHandler {
-        def handle(exchange: HttpExchange): Unit = {
-          val req = Request(exchange)
-          val resp = Response(exchange)
-        }
-      }
-    )
-
-  }
-
-}
-
-class Request(req: HttpExchange) {
-  val path: String = req.getRequestURI().getPath();
-  val method: String = req.getRequestMethod();
-}
-class Response(resp: HttpExchange) {
-  def setHttpHeader(key: String, value: String): Response = {
-    resp.getResponseHeaders().set(key, value)
-    return this;
-  }
-  def send(content: String): Unit = {
-    val bytes = content.getBytes()
-    resp.sendResponseHeaders(200, bytes.length)
-    val os = resp.getResponseBody
-    os.write(bytes)
-    os.close()
+    net.stop(1)
+    println("Server stopped.")
   }
 }
-// class HttpOfthings {
-//   def httpOfThings(callback :(req:Option[HttpExchange],resp:Option[HttpServer]) => Unit):HttpServer = {
-//     return this;
-//   }
-// }
+
+class Server {
+  private var portNumber: Int = 0
+
+  def setPort(port: Int): Unit = {
+    this.portNumber = port
+  }
+
+  def startServer(): ServerOps = {
+    val net = HttpServer.create(new InetSocketAddress(portNumber), 0)
+    net.start()
+    println(s"Server started at http://localhost:$portNumber")
+    new ServerOps(net, portNumber)
+  }
+}
