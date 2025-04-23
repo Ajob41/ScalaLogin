@@ -10,8 +10,11 @@ import scala.annotation.meta.setter
 
 @main def main(): Unit = {
   var server = new Server();
-  server.
-  setPort(3000)
-  server.startServer()
+  server.setPort(3000)
+  var address = server.getAddress;
+  println(address)
+  var port = server.getPort;
+  println(port);
+  server.stopServer()
 }
 
